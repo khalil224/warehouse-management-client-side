@@ -3,7 +3,7 @@ import './Product.css'
 
 const Product = ({ product }) => {
     const { img, name, description, Price, Supplier } = product;
-    console.log(product)
+
     return (
         <div className='product-container'>
             <img src={img} alt="" />
