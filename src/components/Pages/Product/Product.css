@@ -1,0 +1,13 @@
+.product-container {
+    border: 1px solid gray;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product-container img {
+    height: 300px;
+    width: 300px;
+
+}
