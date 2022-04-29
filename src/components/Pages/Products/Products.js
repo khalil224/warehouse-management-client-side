@@ -14,11 +14,13 @@ const Products = () => {
 
     return (
         <div>
-            <h2 className='text-primary'>Our Products: {products.length}</h2>
-            <div className='products-container '>
-                {
-                    products.map(product => <Product product={product}></Product>)
-                }
+            <h2 className='text-primary mb-5'>Our Products</h2>
+            <div className='container'>
+                <div className='products-container '>
+                    {
+                        products.map(product => <Product product={product}></Product>)
+                    }
+                </div>
             </div>
         </div>
     );

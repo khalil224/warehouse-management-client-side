@@ -1,36 +1,36 @@
 import React from 'react';
 import './Banner.css'
 
-import banner1 from '../../../Images/Walton Pro.png'
-import banner2 from '../../../Images/Samsung .png'
-import banner3 from '../../../Images/realme5 pro2.png'
+import banner1 from '../../../Images/realme-2-pro.png'
+import banner2 from '../../../Images/Realme 5 Pro.png'
+import banner3 from '../../../Images/oppo-a7x.png'
 import { Carousel } from 'react-bootstrap';
 
 const Banner = () => {
 
     return (
-        <Carousel variant="dark">
-            <Carousel.Item>
-                <img src={banner1} alt="" />
+        <div className='mt-5 mb-5'>
+            <Carousel variant="dark">
+                <Carousel.Item>
+                    <img src={banner1} alt="" />
+                </Carousel.Item>
 
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
+                <Carousel.Item>
+                    <img
+                        src={banner2}
+                        alt=""
+                    />
+                </Carousel.Item>
 
-                    src={banner2}
-                    alt=""
-                />
+                <Carousel.Item>
+                    <img
+                        src={banner3}
+                        alt=""
+                    />
 
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-
-                    src={banner3}
-                    alt=""
-                />
-
-            </Carousel.Item>
-        </Carousel>
+                </Carousel.Item>
+            </Carousel>
+        </div>
     );
 };
 
