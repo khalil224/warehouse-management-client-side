@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css'
 
 const Product = ({ product }) => {
-    const { img, name, description, Price, Supplier } = product;
+    const { Quantity, img, name, description, Price, Supplier } = product;
 
     return (
         <div className='product-container'>
@@ -10,6 +10,7 @@ const Product = ({ product }) => {
             <h2>{name}</h2>
             <p>{description}</p>
             <h5>Price:{Price}</h5>
+            <h5>Quantity: {Quantity}</h5>
             <h3>Supplier: {Supplier}</h3>
             <button className='btn btn-primary'>Update</button>
 

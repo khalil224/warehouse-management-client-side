@@ -4,7 +4,9 @@ import './Login.css'
 const Login = () => {
     return (
 
-        <div></div>
+        <div>
+            <h2>this is a login page</h2>
+        </div>
 
     )
 }
