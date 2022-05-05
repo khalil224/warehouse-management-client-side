@@ -7,17 +7,17 @@ import three from '../../../Images/three.png'
 
 const ExtraSectionOne = () => {
     return (
-        <div>
-            <h1 className='mt-5 text-primary'>JOINING WAREHOUSE <br /> MOBILE IS SURPRISINGLY <br /> EASY</h1>
-            <div className='middle-container'>
+        <div className='container'>
+            <h2 className='mt-5 text-primary'>Joining Warehouse Mobile Is Surprisingly  Easy</h2>
+            <div className='second-section'>
 
                 <div className='extra-part'>
                     <div >
 
                         <img src={one} alt="" />
 
-                        <h2 className='fw-bold'>Get a SIM</h2>
-                        <p className='fw-bold fs-5'>Buy a new SIM from The Warehouse or Warehouse Stationery and pop it in your phone</p>
+                        <h2 className='fw-bold'>Add your SIM</h2>
+                        <p className='fw-bold fs-6'>Insert your Warehouse Mobile SIM then call 800 from your mobile to activate it</p>
                     </div>
                 </div>
 
@@ -28,8 +28,8 @@ const ExtraSectionOne = () => {
 
                         <div><img src={two} alt="" /></div>
                         <div>
-                            <h2 className='fw-bold'>Get a phone</h2>
-                            <p className='fw-bold fs-5'>Bring your phone with you or buy a new one from The Warehouse or Warehouse Stationery.</p>
+                            <h2 className='fw-bold'>Login in</h2>
+                            <p className='fw-bold fs-6'>Log in to your Warehouse Management Dashboard to start the transfer</p>
                         </div>
 
 
@@ -40,9 +40,10 @@ const ExtraSectionOne = () => {
                     <div >
                         <div><img src={three} alt="" /></div>
                         <div>
-                            <h2 className='fw-bold'>Get going
+                            <h2 className='fw-bold'>Fill out a form
                             </h2>
-                            <p className='fw-bold fs-5'>Call 800 and follow the prompts, top up, and you're all set to go
+                            <p className='fw-bold fs-6 '>
+                                Fill out the form and we'll do the rest. It takes a few hours to change and your number will be on our network within two working days.
 
                             </p>
                         </div>
