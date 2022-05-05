@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Huawei-nova",
         "img": "https://i.ibb.co/2c4HGY8/huawei-nova.png",
         "description": "HUAWEI is pushing smartphone design to the limits with an even bigger screen-to-body ratio on the all-new HUAWEI nova 5T. By hiding the front camera beneath the screen, HUAWEI nova 5T’s screen retains its full integrity, revolutionizing user experience.",
@@ -8,6 +9,7 @@
         "Supplier": "Md. Khalekuzzaman"
     },
     {
+        "id": 2,
         "name": "Realme-5 Pro",
         "img": "https://i.ibb.co/4RY38Cg/realme5-pro.png",
         "description": "With F1.8 ultra large aperture and the half-inch sensor, realme 5 Pro can capture great nightscapes even in low-light condition. When you turn on the Super Nightscape mode, you can take stunning night shots, with the help of multi-frame engine and HDR.",
@@ -16,6 +18,7 @@
         "Supplier": "Md. Abdur Rahim"
     },
     {
+        "id": 3,
         "name": "Samsung-A12",
         "img": "https://i.ibb.co/CBhtGrg/Samsung-A12.png",
         "description": "Samsung Galaxy A12 comes with 6.5 inches PLS IPS HD+ screen. It has a Full-View waterdrop notch design. The back camera is of quad 48+5+2+2 MP with Autofocus, LED flash, depth sensor, dedicated macro camera etc. and Full HD video recording. ",
@@ -24,6 +27,7 @@
         "Supplier": "Md. Nahiduzzaman"
     },
     {
+        "id": 4,
         "name": "Walton-primo H9 Pro",
         "img": "https://i.ibb.co/yVcCbBd/Walton-primo-H9-Pro.jpg",
         "description": "Walton Primo H9 Pro comes with 6.1 inches HD+ IPS screen. It has a full-view handsome looking waterdrop notch design. The back camera is of triple 13+5+0.3 MP with PDAF, depth sensor, ultrawide, LED flash, f/2.0 aperture etc and Full HD video recording. ",
@@ -32,6 +36,7 @@
         "Supplier": "Sahed Ali"
     },
     {
+        "id": 5,
         "name": "Oppo K1 ",
         "img": "https://i.ibb.co/kcQGQxh/oppo-k1.jpg",
         "description": "The Oppo K1 features a plastic body with a 3D injection moulded back, which creates cool patterns against light. The 6.41-inch AMOLED lokking good  and display produces punchy and vivid colours and it also has a segment-first in-display and awesome fingerprint sensor.",
@@ -40,6 +45,7 @@
         "Supplier": "Md. Abdul Karim"
     },
     {
+        "id": 6,
         "name": "Apple Ios 13",
         "img": "https://i.ibb.co/nLPHKqz/Apple-IOS-13.jpg",
         "description": "iOS 13 brings new capabilities to the apps you use every day, with rich updates to Photos and Maps, and privacy-protecting features like Sign In with Apple, all while delivering faster performance,” said Craig Federighi, Apple’s senior vice president of Software Engineering. ",

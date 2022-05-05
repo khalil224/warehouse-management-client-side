@@ -6,6 +6,7 @@ import Blogs from './components/Pages/Blogs/Blogs';
 
 import Header from './components/Pages/Header/Header';
 import Home from './components/Pages/Home/Home';
+import InventoryDetail from './components/Pages/InventoryDetail/InventoryDetail';
 import Login from './components/Pages/Login/Login';
 import NotFound from './components/Pages/NotFound/NotFound';
 
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>} ></Route>
+        <Route path='inventory/:id' element={<InventoryDetail></InventoryDetail>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
