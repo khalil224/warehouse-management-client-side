@@ -1,15 +1,28 @@
 
 import React from 'react';
 import { Button } from 'react-bootstrap';
-
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import './Register.css'
 
 const Register = () => {
+
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+
     const navigate = useNavigate();
 
     const navigateToLogin = () => {
         navigate('/login')
+    }
+
+    if (user) {
+        navigate('/home')
     }
 
     const handleRegister = e => {
@@ -17,7 +30,7 @@ const Register = () => {
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-
+        createUserWithEmailAndPassword(email, password)
 
     }
 
