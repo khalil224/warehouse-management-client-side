@@ -9,6 +9,8 @@ import Home from './components/Pages/Home/Home';
 import InventoryDetail from './components/Pages/InventoryDetail/InventoryDetail';
 import Login from './components/Pages/Login/Login';
 import NotFound from './components/Pages/NotFound/NotFound';
+import Products from './components/Pages/Products/Products';
+import Register from './components/Pages/Register/Register';
 
 
 
@@ -20,8 +22,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>} ></Route>
+        <Route path='/products' element={<Products></Products>} ></Route>
         <Route path='inventory/:id' element={<InventoryDetail></InventoryDetail>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
