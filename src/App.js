@@ -8,7 +8,10 @@ import Checkout from './components/Pages/Checkout/Checkout';
 import Header from './components/Pages/Header/Header';
 import Home from './components/Pages/Home/Home';
 import InventoryDetail from './components/Pages/InventoryDetail/InventoryDetail';
+import AddProduct from './components/Pages/Login/AddProduct/AddProduct';
 import Login from './components/Pages/Login/Login';
+import ManageProducts from './components/Pages/Login/ManageProducts/ManageProducts';
+import MyProducts from './components/Pages/Login/MyProducts/MyProducts';
 import PrivateAuth from './components/Pages/Login/PrivateAuth/PrivateAuth';
 import NotFound from './components/Pages/NotFound/NotFound';
 import Products from './components/Pages/Products/Products';
@@ -29,6 +32,9 @@ function App() {
           <InventoryDetail></InventoryDetail>
         </PrivateAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/manageproduct' element={<ManageProducts></ManageProducts>}></Route>
+        <Route path='/addproduct' element={<AddProduct></AddProduct>}></Route>
+        <Route path='/myproduct' element={<MyProducts></MyProducts>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/checkout' element={<PrivateAuth>
           <Checkout></Checkout>

@@ -32,7 +32,7 @@ const Header = () => {
 
                             {
                                 user ?
-                                    <span className='d-flex'> <Nav.Link as={Link} to="/manage">Manage Products</Nav.Link> <Nav.Link as={Link} to="/addproduct">Add Product</Nav.Link> <Nav.Link as={Link} to="/myproduct">My Products</Nav.Link>
+                                    <span className='d-flex py-2'> <Nav.Link as={Link} to="/manageproduct">Manage Products</Nav.Link>  <Nav.Link as={Link} to="/addproduct">Add Product</Nav.Link> <Nav.Link as={Link} to="/myproduct">My Products</Nav.Link>
                                         <button className='btn btn-link text-secondary text-decoration-none fs-5 fw-bold' onClick={handleSignOut}>Logout</button></span>
                                     :
 
