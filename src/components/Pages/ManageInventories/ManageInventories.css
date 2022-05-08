@@ -1,0 +1,21 @@
+.inventories-container {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.manage-inventory-container img {
+    height: 300px;
+    width: 300px;
+}
+
+.manage-inventory-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+
+
+}

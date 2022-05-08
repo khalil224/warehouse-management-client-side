@@ -1,16 +1,23 @@
 import React, { useEffect, useState } from 'react';
+import { Stack } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import Product from '../Product/Product';
 import './Products.css'
 
 const Products = () => {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
         fetch('http://localhost:5000/product')
             .then(res => res.json())
-            .then(data => setProducts(data))
-    }, [])
+            .then(data => setProducts(data.slice(0, 6)))
+    }, []);
+
+    const navigate = useNavigate();
+    const HandleManageInventories = () => {
+        navigate('/manageinventory')
+    }
 
     return (
         <div id='products'>
@@ -22,6 +29,9 @@ const Products = () => {
                     }
                 </div>
             </div>
+            <Stack direction='horizontal'>
+                <button onClick={HandleManageInventories} className='btn btn-primary mt-5 me-5 px-4 ms-auto'>Manage Inventories</button>
+            </Stack>
         </div>
     );
 };

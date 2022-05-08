@@ -13,6 +13,7 @@ import Login from './components/Pages/Login/Login';
 import ManageProducts from './components/Pages/Login/ManageProducts/ManageProducts';
 import MyProducts from './components/Pages/Login/MyProducts/MyProducts';
 import PrivateAuth from './components/Pages/Login/PrivateAuth/PrivateAuth';
+import ManageInventories from './components/Pages/ManageInventories/ManageInventories';
 import NotFound from './components/Pages/NotFound/NotFound';
 import Products from './components/Pages/Products/Products';
 import Register from './components/Pages/Register/Register';
@@ -40,6 +41,7 @@ function App() {
           <Checkout></Checkout>
         </PrivateAuth>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/manageinventory' element={<ManageInventories></ManageInventories>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
