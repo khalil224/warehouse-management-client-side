@@ -1,5 +1,5 @@
 # Website Name: Bd Mobile Mart
-# Description: This is my bd mobile mart warehouse. You will find here huge collection of mobile phone. We take order for mobile phone.You are always welcome to our warehouse.
+ Description: This is my bd mobile mart warehouse. You will find here huge collection of mobile phone. We take order for mobile phone.You are always welcome to our warehouse.
 # Live site Link:
 # Functionalities and different features of my website:
 * I've created two server side: client side and server side.
