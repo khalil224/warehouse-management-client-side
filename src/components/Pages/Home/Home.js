@@ -4,10 +4,10 @@ import ExtraSectionOne from '../ExtraSectionOne/ExtraSectionOne';
 import ExtraSectionSecond from '../ExtraSectionSecond/ExtraSectionSecond';
 
 
+
 import Products from '../Products/Products';
 
 const Home = () => {
-
 
 
     return (

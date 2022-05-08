@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -7,6 +7,7 @@ import './Login.css'
 import SocialLogin from './SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../Loading/Loading';
 
 const Login = () => {
 
@@ -21,16 +22,23 @@ const Login = () => {
         auth
     );
 
+
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
 
     const location = useLocation();
+
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
+
     let from = location.state?.from?.pathname || '/';
 
     if (user) {
         navigate(from, { replace: true });
     }
+
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -38,6 +46,7 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         signInWithEmailAndPassword(email, password)
+
     }
 
     const navigateToRegister = e => {
@@ -71,6 +80,7 @@ const Login = () => {
 
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
+
 
                 <Button className='mb-3' variant="primary" type="submit">
                     Login
