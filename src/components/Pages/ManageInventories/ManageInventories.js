@@ -5,7 +5,7 @@ import './ManageInventories.css'
 
 const ManageInventories = () => {
 
-    const [products] = useProducts();
+    const [products, setProducts] = useProducts();
 
     const navigate = useNavigate()
     const handleAddProduct = () => {
@@ -13,9 +13,18 @@ const ManageInventories = () => {
     }
 
     const handleDelete = (id) => {
-        const proceedDelete = window.confirm('Are you sure?');
+        const proceedDelete = window.confirm('Are you sure delete the product?');
         if (proceedDelete) {
-
+            const url = `https://still-island-59230.herokuapp.com/product/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    const remaining = products.filter(product => product._id !== id);
+                    setProducts(remaining)
+                })
         }
     }
 

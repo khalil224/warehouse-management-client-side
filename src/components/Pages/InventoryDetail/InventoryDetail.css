@@ -1,4 +1,13 @@
 .inventory-detail {
     margin-top: 50px;
     padding-top: 50px;
+    margin-left: 50px;
+
+    width: 500px;
 }
+
+.inventory-detail img {
+    height: 300px;
+    width: 300px;
+}
+

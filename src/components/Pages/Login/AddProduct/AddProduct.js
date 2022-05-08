@@ -6,7 +6,7 @@ const AddProduct = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/product`;
+        const url = `https://still-island-59230.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {
